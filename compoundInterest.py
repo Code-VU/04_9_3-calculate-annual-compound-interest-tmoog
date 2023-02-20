@@ -1,11 +1,24 @@
+def collect_inputs():
+    P = float(input("Principle (amount): "))
+    T = float(input("Time: "))
+    R = float(input("Rate: "))
+    return P, T, R
+
+def SingleCompoundInterest():
+    P, T, R = collect_inputs()
+    A = P *( 1 + R/100)**T
+    CI = round(A - P,2)
+    print("Compound Interest: "+str(CI))
+
 def calculateCompoundInterest():
+    SingleCompoundInterest()
+    print("---")
+    SingleCompoundInterest()
+    print("---")
+    SingleCompoundInterest()
     
-# This first 3 lines are provided for yougetACompoundInterest()
-# This first 3 lines are provided for you
- client_one_principal = float(input("Principle (amount): "))
- client_one_time =      float(input("Time:               "))
- client_one_rate =      float(input("Rate:               "))
- #print("Compound Interest: "+str(intrest))
+
+
 
     # end assignment
 
